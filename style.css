@@ -8,12 +8,6 @@ body {
   color: white;
 }
 
-.logo-img {
-  max-width: 250px;
-  display: block;
-  margin: 0 auto 15px;
-}
-
 header {
   text-align: center;
   padding: 30px 10px;
@@ -23,6 +17,13 @@ header {
 header p {
   font-size: 1.2rem;
   color: #ccc;
+}
+
+.logo-img {
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 10px;
+  display: block;
 }
 
 .manhwa-list {
