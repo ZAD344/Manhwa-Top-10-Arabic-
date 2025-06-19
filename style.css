@@ -1,8 +1,66 @@
 body {
-  background-image: url('assets/bg.png');
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background: #0f0f0f url('assets/bg.png') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: white;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.manhwa-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.manhwa-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.manhwa-card:hover {
+  transform: scale(1.05);
+}
+
+.manhwa-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.manhwa-card h2 {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 0.9rem;
 }
